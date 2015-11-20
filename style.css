@@ -18,6 +18,13 @@ h6 {
     overflow: auto;
 }
 
+#select{
+  padding-left: 70px;
+}
+.side{
+  float:left;
+}
+
 .education-entry,
 .work-entry,
 .project-entry {
