@@ -4,6 +4,8 @@
 
     <title>Resume</title>
 
+
+
     <link href="css/style.css" rel="stylesheet">
 
     <script src="js/jQuery.js"></script>
@@ -17,6 +19,7 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
+
 <div id="main">
 
     <div id="header" class="center-content clear-fix">
@@ -35,7 +38,25 @@
     </div>
     <div id="education" class="gray">
         <h2>Education</h2>
+            <div id= 'select'>
 
+              <select style="width: 200px;" class='items2'>
+              <option> Onine Courses</option>
+              </select>
+              <dl class="gray">
+
+                  <dt class='side'>School Name :</dt>
+                  <dd class='schoolname'></dd>
+                  <dt class='side'>Course Name :</dt>
+                  <dd class='course'></dd>
+                  <dt class='side'>Year :</dt>
+                  <dd class='year2'></dd>
+                  <dt class='side'>url :</dt>
+                  <dd class='url'></dd>
+              </dl>
+
+
+            </div>
     </div>
     <div id="mapDiv">
         <h2>Where I've Lived and Worked</h2>
@@ -80,5 +101,10 @@
         document.getElementById('mapDiv').style.backgroundColor = 'black';
     }
 </script>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"> </script>
+<script src="js/data.js"></script>
+<script src="js/data-filter.js"></script>
+
 </body>
 </html>
+
