@@ -1,3 +1,5 @@
+/////This is a large collection of strings containing snippets of HTML. Within these snippets, you can find placeholder data in the form of %data% or %contact%.///////
+////Each string has a title that describes how it should be used.////////////
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span><hr/>';
 
