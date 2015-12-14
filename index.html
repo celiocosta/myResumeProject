@@ -14,6 +14,23 @@
 
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
+    <script type="text/javascript">
+    
+///Here I follow the exemple given on the MDN website. "Filtering out all small values". So this is my very and ultra simple filter function/////
+///It represent the years I was working as a self-employed/////
+
+    function myFilter(x){
+
+        return (x % 2 == 0 && x > 2011) ?true: false;
+
+    }
+    var yearNotWorking = [
+      2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015
+    ];
+    var b = yearNotWorking.filter(myFilter);
+
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
     <meta name="viewport" content="width=device-width">
@@ -31,7 +48,13 @@
 
 
     <div id="workExperience2" class="gray1"> <h3>Places worked before last two jobs<h3>
+      <input  id="button1" type="button" value="Click to see the years I was working as a freelance" style="height:100px; width:380px;font-size:325px"; onclick="myFilter(button2.value = 'The years of ' + b + ', I was working as a software reseller')";>
+      <div>
+        <input id="button2" type="button" value="Years worked as a freelance" style="height:100px; width:380px;font-size:325px;"/>
+
+      </div>
     </div>
+
     </div>
     <div id="projects">
         <h2>Projects</h2>
@@ -68,7 +91,11 @@
     </div>
 </div>
 
-<script src="js/resumeBuilder.js"></script>
+<script src="js/resumeBuilder.js">
+
+
+
+</script>
 
 
 
@@ -107,4 +134,5 @@
 
 </body>
 </html>
+
 
