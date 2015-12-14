@@ -1,3 +1,5 @@
+/////Resume Sections//////
+////This resume has four distinct sections: work, education, projects and a header with biographical information//////
 var bio = {
     "name": "Celio Da Costa",
     "role": "Front-End Developer",
@@ -286,6 +288,67 @@ projects.display = function () {
     }
 };
 projects.display();
+
+
+///////Data////////////
+var onlineCourses = [
+    {
+      schoolname: "Udacity",
+        course: "Javascript basic",
+        year2: "July 2015",
+        url: "https://www.udacity.com/nanodegree"
+    },
+    {
+      schoolname: "Code School",
+      course: 'Code School JavaScript Path',
+      year2: 2014,
+      url:'codeschool.com'
+
+    },
+    {
+      schoolname: "Hack Reactor",
+      course: 'Hack Reactor Prep Course',
+      year2: 2015,
+      url: 'hackreactor.com'
+    },
+    {
+      schoolname: "CodeCademy",
+      course: 'Javascript',
+      year2: 2015,
+      url: 'https://www.codecademy.com/'
+    }
+];
+
+////////////Data Filter/////////
+var $items2 = $('.items2');
+var $schoolname = $('.schoolname');
+var $course = $('.course');
+var $year2 = $('.year2');
+var $url = $('.url');
+
+onlineCourses.filter(function(item2, i){
+  $items2.append('<option value = "' + i + '">' + item2.schoolname + '</option>');
+});
+
+$items2.on('change', function(){
+  var online = onlineCourses[$items2.val()];
+
+  if(online){
+  $schoolname.html(online.schoolname);
+  $course.html(online.course);
+  $year2.html(online.year2);
+  $url.html(online.url);
+} else{
+  $schoolname.html('');
+  $course.html('');
+  $year2.html('');
+  $url.html('');
+}
+});
+
+
+
+///////////////
 
 
 
