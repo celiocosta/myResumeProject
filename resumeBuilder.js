@@ -1,5 +1,7 @@
 /////Resume Sections//////
 ////This resume has four distinct sections: work, education, projects and a header with biographical information//////
+
+/////section Bio/////
 var bio = {
     "name": "Celio Da Costa",
     "role": "Front-End Developer",
@@ -87,6 +89,7 @@ bio.display = function () {
 };
 bio.display();
 
+/////section Work/////
 var work = {
     "jobs": [
         {
@@ -160,7 +163,7 @@ $("#workExperience2").append(formattedEmployer4);
 
 //var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
 
-
+/////section Education/////
 var education = {
     "schools": [
         {
@@ -238,6 +241,7 @@ education.display = function () {
 };
 education.display();
 
+/////section Projects/////
 var projects = {
 
    projects :[
@@ -290,7 +294,7 @@ projects.display = function () {
 projects.display();
 
 
-///////Data////////////
+///////Data for online courses////////////
 var onlineCourses = [
     {
       schoolname: "Udacity",
@@ -319,7 +323,6 @@ var onlineCourses = [
     }
 ];
 
-////////////Data Filter/////////
 var $items2 = $('.items2');
 var $schoolname = $('.schoolname');
 var $course = $('.course');
@@ -346,10 +349,8 @@ $items2.on('change', function(){
 }
 });
 
-
-
 ///////////////
 
 
-
+/////Google Map/////
 $("#mapDiv").append(googleMap);
